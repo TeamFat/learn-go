@@ -25,6 +25,19 @@ func main() {
 	fmt.Println(c,d);
 
 	//特殊占用符_,请忽略。使用场景，局部变量如果没有被使用会当做错误
+	//"_" 是一个特殊的变量名，任何赋予它的值都会被丢弃
 	var _,sex = getPerson();
 	fmt.Println(sex);
+
+	//可以使用"+"操作符来链接两个字符串
+	s := "hello"
+	s = "c" + s[1:] //字符串切片操作
+	fmt.Printf("%s\n", s)
+
+	//要修改字符串，必须先将其转换成[]rune或[]byte,完成后再转换为string，这两种方式都会重新分配内存，并复制字节数组
+	m := "hello";
+	ms := []byte(m)
+	ms[2] = 'a';
+	fmt.Println(ms)
+	fmt.Println(string(ms))
 }
