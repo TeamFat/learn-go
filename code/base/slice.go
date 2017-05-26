@@ -19,5 +19,9 @@ func main() {
 	slice := data[1:4:5]
 	fmt.Println(slice)      //[1 2 3]
 
+	//使用内建函数make初始化一个长度很大的值
+	ips := make([]string,100)
+	fmt.Println(ips)
+
 
 }
