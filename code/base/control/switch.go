@@ -1,4 +1,4 @@
-package control
+package main
 
 import "fmt"
 
@@ -47,6 +47,16 @@ func main() {
 		println("b")
 	default:
 		println("c")
+	}
+
+	var v interface{}
+	switch v.(type) {
+	case string:
+		fmt.Printf("The string is '%s' .\n",v.(string))
+	case int,uint,int8,int16,uint16,int32,uint32,int64,uint64:
+		fmt.Printf("The integer is %d.\n",v)
+	default:
+		fmt.Printf("Unsupported value. (type=%T)\n",v)
 	}
 
 }
