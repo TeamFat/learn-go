@@ -2,6 +2,7 @@ package control
 
 import "fmt"
 
+//直接跳出所有嵌套循环， 这时候就可以用到go的label breaks特征了
 func main() {
 	L1:
 		for i := 0;i<3;i++{

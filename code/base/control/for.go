@@ -4,6 +4,8 @@ import (
 	"fmt"
 )
 
+
+//没有do和while的循环，可以用for来替换
 func main() {
 	//for循环的2种方式
 	s := "hello"

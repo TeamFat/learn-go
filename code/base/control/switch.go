@@ -2,6 +2,9 @@ package control
 
 import "fmt"
 
+
+//switch灵活多变，还可以用于类型判断
+//if和switch都可以包含一条初始化语句
 func main() {
 	x := []int{1, 2, 3}
 	i := 3
