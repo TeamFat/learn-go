@@ -27,4 +27,4 @@ func main() {
 		c <- 1
 		fmt.Print("send ")
 	}
-}  
+}
