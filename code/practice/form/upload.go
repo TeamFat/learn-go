@@ -18,7 +18,7 @@ import (
 //处理文件上传我们需要调用req.ParseMultipartForm，里面的参数表示maxMemory， 调用ParseMultipartForm之后，上传的文件存储在maxMemory大小的内存里面，如果文件大小超过了maxMemory， 那么剩下的部分将存储在系统的临时文件中。
 //我们可以通过req.FormFile获取上面的文件句柄，然后实例中使用了io.Copy来存储文件
 //获取其他非文件字段信息的时候就不需要调用reqe.ParseForm，因为在需要的时候Go自动会去调用。 而且ParseMultipartForm调用一次之后，后面再次调用不会再有效果。
-//
+//token 唯一性
 
 // 处理/upload 逻辑
 func upload(res http.ResponseWriter, req *http.Request) {
