@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 )
 
+//创建二进制文件。
 type Post struct {
 	Id      int
 	Content string
