@@ -28,6 +28,8 @@ var (
 )
 
 //go run main.go -n 100 -c 10 -s 10 -m get http://www.baidu.com
+//or  go get -u github.com/rakyll/hey
+//hey -n 100 -c 50 http://www.baidu.com
 func main() {
 	flag.Usage = func() {
 		fmt.Fprintf(os.Stderr, usage, os.Args[0])
